@@ -12,7 +12,8 @@ a {
   text-decoration: none; }
 
 p {
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  line-height: 1.75; }
 
 h1 {
   font-size: 3.5em;
@@ -89,6 +90,7 @@ img {
   background-color: #40D2E5;
   color: white; }
   #projects .project-container {
+    margin-top: 7em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
@@ -106,6 +108,7 @@ img {
     #projects .project .project-description {
       display: inline-block;
       max-width: 350px;
-      padding: 1em; }
+      padding: 1em;
+      text-align: left; }
 
 /*# sourceMappingURL=style.css.map */

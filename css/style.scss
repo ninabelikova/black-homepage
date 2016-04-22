@@ -29,6 +29,7 @@ a {
 
 p {
   font-size: 1.1em;
+  line-height: 1.75;
 }
 
 h1 {
@@ -146,6 +147,7 @@ img {
   color: white;
 
   .project-container {
+    margin-top: 7em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -170,6 +172,7 @@ img {
       display: inline-block;
       max-width: 350px;
       padding: 1em;
+      text-align: left;
     }
   }
 }
