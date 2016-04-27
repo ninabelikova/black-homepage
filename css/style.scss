@@ -136,6 +136,7 @@ img {
     padding: 3em 0 3em;
     line-height: 1.65em;
     letter-spacing: 0.1px;
+    text-align: left;
   }
 }
 
@@ -145,6 +146,10 @@ img {
 #projects {
   background-color: $blue-baby;
   color: white;
+
+  h1 {
+    letter-spacing: -1px;
+  }
 
   .project-container {
     margin-top: 7em;
@@ -173,6 +178,11 @@ img {
       max-width: 350px;
       padding: 1em;
       text-align: left;
+
+      h3 {
+        letter-spacing: 2px;
+        line-height: .7;
+      }
     }
   }
 }

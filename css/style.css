@@ -84,11 +84,14 @@ img {
     margin: 0 auto;
     padding: 3em 0 3em;
     line-height: 1.65em;
-    letter-spacing: 0.1px; }
+    letter-spacing: 0.1px;
+    text-align: left; }
 
 #projects {
   background-color: #40D2E5;
   color: white; }
+  #projects h1 {
+    letter-spacing: -1px; }
   #projects .project-container {
     margin-top: 7em;
     display: flex;
@@ -110,5 +113,8 @@ img {
       max-width: 350px;
       padding: 1em;
       text-align: left; }
+      #projects .project .project-description h3 {
+        letter-spacing: 2px;
+        line-height: .7; }
 
 /*# sourceMappingURL=style.css.map */
