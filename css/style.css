@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,greek,cyrillic);
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%; }
+
+body {
+  margin: 0 auto;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+p {
+  font-size: 1.1em;
+  line-height: 1.75; }
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 400; }
+
+h3 {
+  font-size: 2em;
+  font-weight: 400; }
+
+button {
+  border: none;
+  padding: 0.7em 1.5em 0.7em;
+  font-size: 0.8em;
+  line-height: 1.1em; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.brick {
+  padding: 10em 0 6em;
+  text-align: center; }
+
+#navbar {
+  padding: 1.5em 0 1em;
+  font-size: 1.5em;
+  z-index: 100;
+  position: absolute;
+  width: 100%; }
+  #navbar a {
+    float: right;
+    padding-left: .5em;
+    padding-right: 2em;
+    color: #2127BF; }
+
+#food {
+  color: #2127BF; }
+  #food #food-question {
+    padding: 4em 0 2em; }
+    #food #food-question p {
+      font-size: 2em; }
+    #food #food-question button {
+      font-size: 1.3em;
+      line-height: .7em;
+      border: 2px solid #2127BF;
+      color: #2127BF;
+      border-radius: 5px;
+      padding: .5em 1em .5em;
+      margin: .7em;
+      background-color: white; }
+  #food #food-potato {
+    max-width: 60%;
+    max-height: 60%;
+    margin: 0 auto;
+    display: block; }
+
+#introduction {
+  background-color: #2127BF;
+  color: #FB664D; }
+  #introduction #intro-name button {
+    background-color: #A44B7A;
+    margin: 0.7em;
+    border-radius: 10px;
+    color: #2D2A30; }
+  #introduction #intro-text {
+    font-size: 1.4em;
+    width: 50%;
+    margin: 0 auto;
+    padding: 3em 0 3em;
+    line-height: 1.65em;
+    letter-spacing: 0.1px;
+    text-align: left; }
+
+#projects {
+  background-color: #40D2E5;
+  color: white; }
+  #projects h1 {
+    letter-spacing: -1px; }
+  #projects .project-container {
+    margin-top: 7em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  #projects .project {
+    border: 2px solid white;
+    border-radius: 30px;
+    display: flex;
+    padding: 1em;
+    margin-bottom: 2em; }
+    #projects .project .project-image {
+      max-width: 350px;
+      display: inline-block; }
+      #projects .project .project-image img {
+        border-radius: 15px; }
+    #projects .project .project-description {
+      display: inline-block;
+      max-width: 350px;
+      padding: 1em;
+      text-align: left; }
+      #projects .project .project-description h3 {
+        letter-spacing: 2px;
+        line-height: .7; }
+
+/*# sourceMappingURL=style.css.map */

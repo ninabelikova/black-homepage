@@ -1,32 +1,42 @@
-<html>
+<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <title>Nina Belikova</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="stuff.js"></script>
-  <link rel="stylesheet" href="animate.css">
-  <link rel="stylesheet" href="style.css">
+  <script src="js/stuff.js"></script>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body ng-app="app" ng-controller="PotatoControl">
+
+
+   <!--       Navbar        -->
+
   <div id="navbar">
     <a href="http://blog.ninabelikova.com">blog</a>
     <a href="#">contact</a>
   </div>
 
-  <div id="food">
-    <img id="potato" src="potato.png">
 
-    <div id="question">
+  <!--      Brick: Food     -->
+
+  <div id="food" class="brick">
+    <img id="food-potato" src="assets/potato.png">
+
+    <div id="food-question">
       <p>Do you like potatoes?</p>
       <button class="animated" ng-class="{tada:oui}" ng-click="yesTada()">yes</button>
       <button class="animated" ng-class="{tada:nan}" ng-click="noTada()">go to hell</button>
     </div>
   </div>
 
-  <div id="block">
-    <div id="intro" ng-init="language = 1">
+
+  <!--    Brick: Introduction   -->
+
+  <div id="introduction" class="brick">
+    <div id="intro-name" ng-init="language = 1">
       <h1 ng-show="language === 1">Hello, I'm Nina Belikova.</h1>
       <h1 ng-show="language === 2">哈囉，我叫詹惟惟！</h1>
       <h1 ng-show="language === 3">Bonjour, je m'appelle Nina Belikova.</h1>
@@ -37,7 +47,7 @@
       <button ng-click="language = 4">русский</button>
     </div>
 
-    <div id="text">
+    <div id="intro-text">
       <p>
         I like potatoes<span ng-show="potatoFondness">, too</span>.<span ng-show="potatoHatred"> Unlike you.</span>
       </p>
@@ -46,6 +56,36 @@
         And I make websites, teach French/English and offer unsolicited bad advice for a living.
       </p>
     </div>
+  </div>
+
+
+  <!--     Brick: Projects    -->
+
+  <div class="brick" id="projects">
+    <h1>Websites: Results of Extreme Trollness & Coffee </h1>
+    <h3>
+      Enter at your own peril.
+    </h3>
+
+    <div class="project-container">
+      <div class="project">
+        <div class="project-image">
+          <a href="https://ninabelikova.github.io/pomodoro/" target="_blank"><img src="assets/screenshot-pomodoro.png" alt="" /></a>
+        </div>
+
+        <div class="project-description">
+          <h3>C'est Un Pomodoro</h3>
+          <p>
+            A multilingual pomodoro with a ringtone full of Pewdiepie's love. Amazing Hakka translation by Ian Lee.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
   </div>
 </body>
 </html>

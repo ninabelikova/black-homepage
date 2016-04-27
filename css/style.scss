@@ -1,0 +1,188 @@
+// --------------- Imports & Variables -----------------------
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,greek,cyrillic);
+
+$electric-blue: #2127BF;
+$cute-orange: #FB664D;
+$fake-black: #2D2A30;
+$weird-violet: #A44B7A;
+
+$blue-baby: #40D2E5;
+$orange-baby: #F95120;
+
+// --------------- General ------------------------
+
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.75;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+button {
+  border: none;
+  padding: 0.7em 1.5em 0.7em;
+  font-size: 0.8em;
+  line-height: 1.1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// ------------------ Classes ---------------
+
+.brick {
+  padding: 10em 0 6em;
+  text-align: center;
+}
+
+
+// ------------------ Navbar -----------------
+
+#navbar {
+  padding: 1.5em 0 1em;
+  font-size: 1.5em;
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+
+  a {
+    float: right;
+    padding-left: .5em;
+    padding-right: 2em;
+    color: $electric-blue;
+  }
+}
+
+
+// -------------- Brick: Food ---------------
+
+#food {
+  color: $electric-blue;
+
+  #food-question {
+    padding: 4em 0 2em;
+
+    p {
+      font-size: 2em;
+    }
+
+    button {
+      font-size: 1.3em;
+      line-height: .7em;
+      border: 2px solid $electric-blue;
+      color: $electric-blue;
+      border-radius: 5px;
+      padding: .5em 1em .5em;
+      margin: .7em;
+      background-color: white;
+    }
+  }
+
+  #food-potato {
+    max-width: 60%;
+    max-height: 60%;
+    margin: 0 auto;
+    display: block;
+  }
+
+}
+
+
+// --------- Brick: Introduction ------------
+
+#introduction {
+  background-color: $electric-blue;
+  color: $cute-orange;
+
+  #intro-name {
+    button {
+      background-color: $weird-violet;
+      margin: 0.7em;
+      border-radius: 10px;
+      color: $fake-black;
+    }
+  }
+
+  #intro-text {
+    font-size: 1.4em;
+    width: 50%;
+    margin: 0 auto;
+    padding: 3em 0 3em;
+    line-height: 1.65em;
+    letter-spacing: 0.1px;
+    text-align: left;
+  }
+}
+
+
+// ---------- Brick: Projects ---------------
+
+#projects {
+  background-color: $blue-baby;
+  color: white;
+
+  h1 {
+    letter-spacing: -1px;
+  }
+
+  .project-container {
+    margin-top: 7em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project {
+    border: 2px solid white;
+    border-radius: 30px;
+    display: flex;
+    padding: 1em;
+    margin-bottom: 2em;
+
+    .project-image {
+      max-width: 350px;
+      display: inline-block;
+      img {
+        border-radius: 15px;
+      }
+    }
+
+    .project-description {
+      display: inline-block;
+      max-width: 350px;
+      padding: 1em;
+      text-align: left;
+
+      h3 {
+        letter-spacing: 2px;
+        line-height: .7;
+      }
+    }
+  }
+}
