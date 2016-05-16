@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <head>
-  <meta charset="utf-8">
+
+  <!-- extremely cool meta stuff coming -->
+  <meta name="title" content="Nina Belikova">
+  <meta name="description" content="Nina's cheeky main website.">
+  <meta name="keywords" content="Nina Belikova,">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="author" content="Nina Belikova">
+  <!-- Meta out -->
+
   <title>Nina Belikova</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/angular.min.js"></script>
   <script src="js/stuff.js"></script>
   <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <!-- Piwik -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(["setDomains", ["*.ninabelikova.com","*.ninabelikova.com"]]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//nyehhehheh.xyz/piwik/piwik/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', 2]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="//nyehhehheh.xyz/piwik/piwik/piwik.php?idsite=2" style="border:0;" alt="piwik tracking image" /></p></noscript>
+  <!-- End Piwik Code -->
+
 </head>
 
 <body ng-app="app" ng-controller="PotatoControl">
@@ -15,15 +42,15 @@
    <!--       Navbar        -->
 
   <div id="navbar">
-    <a href="http://blog.ninabelikova.com">blog</a>
-    <a href="#">contact</a>
+    <a href="https://blog.ninabelikova.com">blog</a>
+    <a href="#" ng-click="change_contact()">{{contact_text}}</a>
   </div>
 
 
   <!--      Brick: Food     -->
 
   <div id="food" class="brick">
-    <img id="food-potato" src="assets/potato.png">
+    <img id="food-potato" src="assets/potato.png" alt="a big clean beautiful image of potatoes">
 
     <div id="food-question">
       <p>Do you like potatoes?</p>
@@ -38,16 +65,14 @@
   <div id="introduction" class="brick">
     <div id="intro-name" ng-init="language = 1">
       <h1 ng-show="language === 1">Hello, I'm Nina Belikova.</h1>
-      <h1 ng-show="language === 2">哈囉，我叫詹惟惟！</h1>
       <h1 ng-show="language === 3">Bonjour, je m'appelle Nina Belikova.</h1>
       <h1 ng-show="language === 4">Здравствуйте, меня зовут Нина Беликова.</h1>
       <button ng-click="language = 1 ">english</button>
-      <button ng-click="language = 2 ">中文</button>
       <button ng-click="language = 3">français</button>
       <button ng-click="language = 4">русский</button>
     </div>
 
-    <div id="intro-text">
+    <div id="intro-text" class="text">
       <p>
         I like potatoes<span ng-show="potatoFondness">, too</span>.<span ng-show="potatoHatred"> Unlike you.</span>
       </p>
@@ -62,23 +87,45 @@
   <!--     Brick: Projects    -->
 
   <div class="brick" id="projects">
-    <h1>Websites: Results of Extreme Trollness & Coffee </h1>
-    <h3>
-      Enter at your own peril.
-    </h3>
+    <h2>Websites that I'm semi not ashamed to share publicly</h2>
+    <div class="text" id="project-text">
+      <p>
+        Because if you're one of my close friends, you'd know how many troll projects I've coded and am too ashamed to post here.
+        Approximate troll project to actually 1% useful to humanity (or probably just me) project ratio: 37:1.
+      </p>
+      <p>
+        Enter at your own peril.
+      </p>
+    </div>
+
 
     <div class="project-container">
+
       <div class="project">
         <div class="project-image">
-          <a href="https://ninabelikova.github.io/pomodoro/" target="_blank"><img src="assets/screenshot-pomodoro.png" alt="" /></a>
+          <a href="https://ninabelikova.com/pomodoro/" target="_blank"><img src="assets/screenshot-pomodoro.png" alt="A screenshot of my pomodoro web app." /></a>
         </div>
 
         <div class="project-description">
-          <h3>C'est Un Pomodoro</h3>
+          <h4>C'est Un Pomodoro</h4>
           <p>
             A multilingual pomodoro with a ringtone full of Pewdiepie's love. Amazing Hakka translation by Ian Lee.
           </p>
         </div>
+      </div>
+
+      <div class="project">
+        <div class="project-image">
+          <a href="https://toriel.nyehhehheh.xyz" target="_blank"><img src="assets/screenshot-toriel.png" alt="An expertly cropped screenshot of my Toriel hugging service." /></a>
+        </div>
+
+        <div class="project-description">
+          <h4>Unlimited Hugs From Toriel</h4>
+          <p>
+            An Undertale fan site. I made this out of the anger of being forced to leave Toriel alone in the ruins and not getting enough hugs from her. It serves no other purpose than to watch Toriel hugging you over and over again.
+          </p>
+        </div>
+
       </div>
 
 
